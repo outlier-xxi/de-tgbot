@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     start_retry: int        = 23  # Retry seconds
     admin_user: str
 
-    db_conn_str: str        = "postgresql://postgres:postgres@localhost:5432/tgbot"
+    db_conn_str: str        = "postgresql://postgres:postgres@pg:5432/tgbot"
     alembic_table_name: str = "tgbot"
 
     q1: str                 = "Дерево пандо"
