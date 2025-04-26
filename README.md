@@ -13,7 +13,7 @@ docker build -t de-tgbot .
 
 Пример ответа YandexGPT Light
 
-```json
+```python
 {
   'result': {
     'alternatives': [
