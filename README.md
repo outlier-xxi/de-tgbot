@@ -1,12 +1,8 @@
-# tg-bot
+# README
 
 Репозиторий Telegram бота.
 
-Запустить все:
-
-```shell
-docker compose up -d
-```
+# Overview
 
 Проект имеет следующие функциональности:
 - Телеграм бот в чате.
@@ -16,3 +12,11 @@ docker compose up -d
 
 Также для проекта сделан:
 - Дашборд в Yandex Data Lense.
+
+# Install
+
+Запустить все:
+
+```shell
+docker compose up -d
+```
