@@ -14,6 +14,7 @@ COPY pyproject.toml poetry.lock ./
 # Устанавливаем зависимости
 RUN poetry install --no-root --no-interaction --no-ansi --only main
 
+COPY ./alembic.ini              /app/alembic.ini
 COPY ./entrypoint.sh            /app/entrypoint.sh
 RUN chmod +x                    /app/entrypoint.sh
 ENTRYPOINT ["/app/entrypoint.sh"]
