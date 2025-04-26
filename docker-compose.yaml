@@ -20,11 +20,11 @@ services:
       PGDATA: /var/lib/postgresql/data/pgdata
       POSTGRES_DB: tgbot
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      # POSTGRES_PASSWORD: postgres  # Read from .env
     volumes:
       # external_directory:internal_directory
       # volume for postgresql data
       - "${DEPLOY_DIR:-.}/data/pg/pgdata:/var/lib/postgresql/data/pgdata"
     ports:
       # "external_port:internal_port"
-      - "5432:5432"
+      - "55432:5432"
